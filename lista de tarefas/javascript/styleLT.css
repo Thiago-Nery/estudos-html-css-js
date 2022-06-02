@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#divform{
+    display: block;
+    place-items: center;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+}
+
+#enviar{
+    padding: 10px;
+    background-color: rgb(47, 255, 68);
+    border-radius: 10px;
+    border: 2px solid green;
+    transition: 0.5s;
+}
+#enviar:hover{
+    background-color: green;
+}
+#divli{
+    display: grid;
+    place-items: center;
+}
+#ul{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 100px;
+    position: absolute;
+    border: 2px solid red;
+    top: 200px ;
+    width: 400px;
+    height: auto;
+}
+#formtextA{
+    background-color: aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}

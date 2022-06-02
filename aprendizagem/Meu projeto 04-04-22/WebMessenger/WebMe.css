@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+/* inicio da configuração da sidebar */
+
+#sidebar{
+    position: fixed;
+    overflow: scroll;
+    overflow-x: hidden;
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color:darkcyan;
+    
+}
+#lista{
+    padding: 0;;
+}
+.contatos{
+    text-align: center;
+    list-style-type: none;
+}
+.links{
+    display: block;
+    padding: 15%;
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.links:hover:not(#voce){
+    display: block;
+    padding: 15%;
+    text-decoration: none;
+    color: #000;
+    background-color:darkgray;
+}
+
+#voce{
+    border-bottom: 5px solid cadetblue;
+    border-radius: 0 0 30px 30px;
+    padding: 5%;
+    background-color: rgb(113, 186, 189);
+    color: #000;
+}
+#paragrafo{
+    display: inline-block;
+    margin: 0 0 0 2%;
+    padding: 0;
+}
+
+/*icons*/
+
+.material-icons{
+    vertical-align: bottom;
+    margin-right: 0 auto;
+}
+#settings{
+    margin: 0 2% 0 20%;
+    transition: 2s;
+}
+#settings:hover{
+    transform: rotate(360deg);
+    color: white;
+}
+#add-person{
+    margin-right: -5%;
+    transition: 0.5s;
+}
+#add-person:hover{
+    color: #ffffff;
+}
+#main-user:hover{
+    cursor:pointer;
+}
+
+/* Configuração das mensagens */
+
+#conversa{
+    overflow-x: hidden;
+    background-color:cadetblue;
+    width: 80%;
+    height: 100%;
+    position:absolute;
+    right: 0;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: column;
+}
+#typing{
+    bottom: 0;
+    width: 99.35%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+#caixatxt{
+    width: 90%;
+    margin: 0 0 1% auto; 
+    padding: 0.5%;
+    border-radius: 30px;
+}
+#caixatxt:focus{
+    outline: 0;
+
+} 
+#send{
+    margin: 0 auto 1.5% 2%;
+    background-color: transparent;
+    border-style: none;
+    color: rgb(4, 94, 94);
+    width: 25px;
+    padding-left: 3px;
+}
+#send:hover{
+    cursor: pointer;
+    background-color: rgb(153, 194, 196);
+    border-radius: 30px;
+}
+li:not(.contatos){
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    border-radius: 20px 20px 0 20px;
+    margin: 10px 5px 0 0;
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(89, 189, 189);
+}
+#scrollUl{
+    overflow-y: scroll;
+    height: 100%;
+}
+
+
+ /* Design Responsivo */
+
+@media (max-width: 850px){
+    #typing{
+        width: 99.35%;
+        height: 8%;
+    }
+    #caixatxt{
+        width: 90%;
+        margin: 0 0 1% 3%; 
+        padding: 3%;
+    }
+    #send{
+        margin: 0 2% 3.5% 0 ;
+    }
+    #sidebar{
+        width: 28%;
+    }
+    #conversa{
+        width: 72%;
+    }
+    .links{
+        padding: 20% 8%;
+    }
+    #voce{
+        padding: 0;
+    }
+    #account-circle{
+        margin-right: 10px;
+    }
+    #settings{
+        margin-left: 2%;
+    }
+    #add-person{
+        margin-right: 12px;
+    }
+    
+    span:not(#account-circle, #settings, #add-person){
+        margin: 0 10px 0 0;
+    }
+}
+@media (max-width: 752px){
+    #settings{
+        margin-left: 25%;
+    }
+} 
+@media (min-width: 1218px){
+    #settings{
+        margin-left: 6%;
+    }
+} 
+@media (min-width: 1105px){
+    #settings{
+        margin-left: auto;
+    }
+}  
