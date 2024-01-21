@@ -1,2 +1,2 @@
 # estudos-html-e-css
- Estudos desenvolvidos durante o curso de HTML5 e CSS3
+ Estudos desenvolvidos durante os cursos de HTML5, CSS3 e JavaScript
